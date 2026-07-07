@@ -98,7 +98,7 @@ const ProductList1 = ({ className }) => {
 
   return (
     <section className={cn("w-full bg-background py-8 sm:py-14", className)}>
-      <div className="mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-full max-w-screen-xl px-0 sm:px-0 lg:px-8">
 
         {/* Painel de busca */}
         <div className="mb-8 rounded-2xl border border-ink/10 bg-background p-4 shadow-sm sm:p-5">
@@ -224,7 +224,7 @@ const ProductList1 = ({ className }) => {
                 ref={(el) => { sectionRefs.current[section.id] = el; }}
                 className="space-y-4 scroll-mt-24"
               >
-                <div className="flex items-baseline justify-between border-b border-dashed border-ink/15 pb-2.5">
+                <div className="flex items-baseline justify-between border-b border-dashed border-ink/15 pb-2.5 px-4 sm:px-6 lg:px-0">
                   <h2 className="font-display text-lg font-semibold text-ink sm:text-xl">
                     {section.label}
                   </h2>
@@ -234,25 +234,25 @@ const ProductList1 = ({ className }) => {
                   </p>
                 </div>
 
-                <div className="relative">
+                <div className="relative w-screen left-1/2 -ml-[50vw] lg:relative lg:left-auto lg:ml-0 lg:w-full">
                   <Carousel
                     opts={{ align: "start", slidesToScroll: 1, dragFree: true }}
                     className="w-full"
                   >
-                    <CarouselContent className="-ml-3 sm:-ml-4">
+                    <CarouselContent className="ml-0 pl-0">
                       {section.products.map((item) => (
                         <CarouselItem
                           key={item.slug}
-                          className="basis-[72%] pl-3 sm:basis-1/2 sm:pl-4 md:basis-1/2 lg:basis-1/3 xl:basis-1/4"
+                          className="basis-[84%] pl-0 pr-2 sm:basis-[48%] sm:pr-3 md:basis-[48%] md:pr-3 lg:basis-1/3 xl:basis-1/4"
                         >
                           <ProductCard {...item} />
                         </CarouselItem>
                       ))}
                     </CarouselContent>
 
-                    <CarouselPrevious className="hidden sm:flex -left-4 size-9 rounded-full border border-ink/10 bg-background text-ink shadow-md hover:bg-background hover:text-terracotta lg:-left-5" />
-                    <CarouselNext className="hidden sm:flex -right-4 size-9 rounded-full border border-ink/10 bg-background text-ink shadow-md hover:bg-background hover:text-terracotta lg:-right-5" />
-                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center sm:hidden">
+                    <CarouselPrevious className="hidden lg:flex -left-4 size-9 rounded-full border border-ink/10 bg-background text-ink shadow-md hover:bg-background hover:text-terracotta lg:-left-5" />
+                    <CarouselNext className="hidden lg:flex -right-4 size-9 rounded-full border border-ink/10 bg-background text-ink shadow-md hover:bg-background hover:text-terracotta lg:-right-5" />
+                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center lg:hidden">
                       <div className="flex h-full items-center bg-gradient-to-l from-paper-soft via-paper-soft/70 to-transparent pl-8 pr-2">
                         <span className="flex h-7 w-7 items-center justify-center rounded-full border border-ink/15 bg-background text-ink-soft shadow-sm">
                           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" className="size-3.5"><polyline points="9 18 15 12 9 6" /></svg>

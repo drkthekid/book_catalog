@@ -34,6 +34,30 @@ const rawProducts = [
     volumes: null,
     price: { regular: 30.0, currency: "BRL" },
   },
+   {
+    name: "Aristóteles e Dante — Box",
+    image: { src: "/aristotoles-e-dante.jpeg", alt: "Box Aristóteles e Dante Descobrem os Segredos do Universo" },
+    link: "#",
+    category: "romance",
+    description:
+      "Box com os dois volumes de Aristóteles e Dante Descobrem os Segredos do Universo — uma história de identidade, amizade e primeiro amor no El Paso dos anos 80.",
+    hardcover: true,
+    noMarks: true,
+    volumes: { from: 1, to: 2 },
+    price: { regular: 80.0, sale: 70.0, currency: "BRL" },
+  },
+  {
+    name: "Coleção Diário de uma Garota Nada Popular",
+    image: { src: "/diario-de-uma-garota-nada-popular.jpeg", alt: "Coleção Diário de uma Garota Nada Popular" },
+    link: "#",
+    category: "infantil",
+    description:
+      "Nikki Maxwell registra em seu diário (com direito a desenhos!) os dramas de dividir os corredores da escola com sua arquirrival MacKenzie. Coleção completa do volume 1 ao 11.",
+    hardcover: true,
+    noMarks: true,
+    volumes: { from: 1, to: 11 },
+    price: { regular: 180.0, currency: "BRL" },
+  },
   {
     name: "A Culpa é das Estrelas",
     image: { src: "/a-culpa-e-das-estrelas.jpeg", alt: "Capa do livro A Culpa é das Estrelas" },
@@ -46,18 +70,7 @@ const rawProducts = [
     volumes: null,
     price: { regular: 40.0, currency: "BRL" },
   },
-  {
-    name: "Aristóteles e Dante — Box",
-    image: { src: "/aristotoles-e-dante.jpeg", alt: "Box Aristóteles e Dante Descobrem os Segredos do Universo" },
-    link: "#",
-    category: "romance",
-    description:
-      "Box com os dois volumes de Aristóteles e Dante Descobrem os Segredos do Universo — uma história de identidade, amizade e primeiro amor no El Paso dos anos 80.",
-    hardcover: true,
-    noMarks: true,
-    volumes: { from: 1, to: 2 },
-    price: { regular: 80.0, sale: 70.0, currency: "BRL" },
-  },
+ 
   {
     name: "A Seleção — Trilogia",
     image: { src: "/a-selecao.jpeg", alt: "Box da trilogia A Seleção" },
@@ -277,18 +290,7 @@ const rawProducts = [
     volumes: null,
     price: { regular: 15.0, currency: "BRL" },
   },
-  {
-    name: "Coleção Diário de uma Garota Nada Popular",
-    image: { src: "/diario-de-uma-garota-nada-popular.jpeg", alt: "Coleção Diário de uma Garota Nada Popular" },
-    link: "#",
-    category: "infantil",
-    description:
-      "Nikki Maxwell registra em seu diário (com direito a desenhos!) os dramas de dividir os corredores da escola com sua arquirrival MacKenzie. Coleção completa do volume 1 ao 11.",
-    hardcover: true,
-    noMarks: true,
-    volumes: { from: 1, to: 11 },
-    price: { regular: 180.0, currency: "BRL" },
-  },
+  
   {
     name: "Diário de um Banana — O Livro do Filme",
     image: { src: "/diario-de-um-banana.jpeg", alt: "Capa do livro Diário de um Banana — O Livro do Filme" },

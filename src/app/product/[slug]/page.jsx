@@ -85,7 +85,7 @@ export default async function ProductPage({ params }) {
                                     )}
                                     {volumes && (
                                         <Badge variant="neutral">
-                                            Box {volumes.from}–{volumes.to}
+                                            Coleção {volumes.from}–{volumes.to}
                                         </Badge>
                                     )}
                                 </div>
